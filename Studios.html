@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BlueRay</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.w3-sidebar a {font-family: "League Spartan", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "League Spartan", sans-serif;}
+</style>
+</head>
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <a href="Home.html">
+      <img src="img\logo.png" alt="BlueRay" style="width:50%">
+    </a>
+    <h3 class="w3-wide"><b>BlueRay</b></h3>
+
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <!-- <a href="index.html" class="w3-bar-item w3-button">Home - Movies</a> -->
+    <a href="Stars.html" class="w3-bar-item w3-button">Stars</a>
+    <!-- <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+        Studios <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="#" class="w3-bar-item w3-button">Paramount</a>
+      <a href="#" class="w3-bar-item w3-button">WarnersBrothers</a>
+      <a href="#" class="w3-bar-item w3-button">WaltDisney</a>
+      <a href="#" class="w3-bar-item w3-button">UniversalPictures</a> -->
+    <a href="Studios.html" class="w3-bar-item w3-button">Studios</a>
+    <a href="Feedback.html" class="w3-bar-item w3-button">Feedback</a>
+
+
+    </div>
+    <a href="Country.html" class="w3-bar-item w3-button">Country</a>
+  </div>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">TicketNow</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">Studios</p>
+    <p class="w3-right">
+      <a href="Cart.html"><i class="fa fa-shopping-cart w3-margin-right"></i></a>
+      <a href="Search.html">
+        <i class="fa fa-search"></i>
+      </a>
+    </p>
+  </header>
+
+  <h1><center>4 Major Suppliers</center></h1>
+  <div class="studio-grid-container">
+    <div class="grid-item">
+      <p>Paramount</p>
+      <img src="img/Paramount.jpg" style="width:50%">
+      <h6 class="studio-text">Paramount+ is an American subscription video on-demand over-the-top streaming service owned and operated by Paramount Streaming, 
+        a division of Paramount Global</h6>
+    </div>
+    <div class="grid-item">
+      <p>WarnersBrothers</p>
+      <img src="img/WarnersBrothers.jpg" style="width:50%">
+      <h6 class="studio-text">Warner Bros. Entertainment Inc is an American diversified multinational mass media and entertainment conglomerate headquartered at the Warner Bros.
+      </h6>
+    </div>
+    <div class="grid-item">
+      <p>WaltDisney</p>
+      <img src="img/WaltDisney.png" style="width:50%">
+      <h6 class="studio-text">The Walt Disney Company, commonly known as Disney, is an American multinational entertainment and media conglomerate headquartered at the Walt Disney Studios complex in Burbank, California.</h6>
+      </div>
+    <div class="grid-item">
+      <p>Universal Pictures</p>
+      <img src="img/UniversalPictures.jpg" style="width:50%">
+      <h6 class="studio-text">Universal Pictures is an American film production and distribution company owned by Comcast through the NBCUniversal Film and Entertainment division of NBCUniversal.</h6>
+      </div>
+      </div>
+  </div>
+
+  
+  <!-- Subscribe section -->
+  <!-- <div class="w3-container w3-black w3-padding-32">
+    <h1>Subscribe</h1>
+    <p>To get special offers and VIP treatment:</p>
+    <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+    <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>
+  </div> -->
+
+  <div class="w3-container w3-black w3-padding-32">
+    <h1></h1>
+    <p></p>
+  </div>
+  
+  <!-- Footer -->
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>

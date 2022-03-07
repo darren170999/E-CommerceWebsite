@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BlueRay</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.w3-sidebar a {font-family: "League Spartan", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "League Spartan", sans-serif;}
+</style>
+</head>
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <a href="Home.html">
+      <img src="img\logo.png" alt="BlueRay" style="width:50%">
+    </a>
+    <h3 class="w3-wide"><b>BlueRay</b></h3>
+
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <!-- <a href="index.html" class="w3-bar-item w3-button">Home - Movies</a> -->
+    <a href="Stars.html" class="w3-bar-item w3-button">Stars</a>
+    <!-- <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+        Studios <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="#" class="w3-bar-item w3-button">Paramount</a>
+      <a href="#" class="w3-bar-item w3-button">WarnersBrothers</a>
+      <a href="#" class="w3-bar-item w3-button">WaltDisney</a>
+      <a href="#" class="w3-bar-item w3-button">UniversalPictures</a> -->
+    <a href="Studios.html" class="w3-bar-item w3-button">Studios</a>
+    <a href="Feedback.html" class="w3-bar-item w3-button">Feedback</a>
+
+
+    </div>
+    <a href="Country.html" class="w3-bar-item w3-button">Country</a>
+  </div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">TicketNow</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">Stars</p>
+    <p class="w3-right">
+      <a href="Cart.html"><i class="fa fa-shopping-cart w3-margin-right"></i></a>
+      <a href="Search.html">
+        <i class="fa fa-search"></i>
+      </a>
+    </p>
+  </header>
+
+  <h1><center>Movie Stars</center></h1>
+  <div class="studio-grid-container">
+    <div class="grid-item">
+      <a href="https://www.imdb.com/name/nm0000138/bio?ref_=nm_ov_bio_sm" target="_blank">
+      <p>Leonardo DiCarprio</p>
+    </a>
+      <img src="img/Leonardo Di Carprio.jpg" style="width:30%">
+      <h6 class="studio-text">Few actors in the world have had a career quite as diverse as Leonardo DiCaprio's. DiCaprio has gone from relatively humble beginnings, as a supporting cast member of the sitcom Growing Pains (1985) and low budget horror movies, such as Critters 3 (1991), to a major teenage heartthrob in the 1990s, as the hunky lead actor in movies such as Romeo + Juliet (1996) and Titanic (1997), to then become a leading man in Hollywood blockbusters, made by internationally renowned directors such as Martin Scorsese and Christopher Nolan.
+      </h6>
+    </div>
+    <div class="grid-item">
+      <a href="https://www.imdb.com/name/nm1159180/" target="_blank">
+      <p>Ed Helms</p>
+    </a>
+      <img src="img/Ed Helms.jpg" style="width:30%">
+      <h6 class="studio-text">Edward Parker Helms (born January 24, 1974) is an American actor, comedian, writer, and producer. He has played paper salesman Andy Bernard in the NBC sitcom The Office (2006–2013), a correspondent on Comedy Central's The Daily Show, and starred as Stuart Price in The Hangover trilogy. He provided the voice of The Once-ler in Illumination’s The Lorax and the titular character in DreamWorks Animation's Captain Underpants: The First Epic Movie. In 2021, he starred in the comedy series Rutherford Falls.
+      </h6>
+    </div>
+    <div class="grid-item">
+      <a href="https://www.imdb.com/name/nm4972453/" target="_blank">
+      <p>Olivia Cooke</p>
+    </a>
+      <img src="img/Olivia Cooke.jpg" style="width:30%">
+      <h6 class="studio-text">Olivia Catherine Cooke Wilde (born 27 December 1993) is an English actress. She is known for her starring role as Emma Decody in the A&E drama thriller series Bates Motel (2013–2017) and as Becky Sharp in the period drama miniseries Vanity Fair (2018). She also starred in the horror film Ouija (2014), the comedy-drama film Me and Earl and the Dying Girl (2015), the period horror mystery film The Limehouse Golem (2016), the thriller film Thoroughbreds (2017), the sci-fi film Ready Player One (2018), and the drama film Sound of Metal (2020).</h6>
+    </div>
+  </div>
+
+  <div class="w3-container w3-black w3-padding-32">
+    <h1></h1>
+    <p></p>
+  </div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
